@@ -10,11 +10,12 @@
 
   <body>
 
-    <div class="logo">
-      <a class="logo-img"><img src="" alt="логотип сайта города Седона " /></a>
-    </div>
+    
     <header class="page-header">
       <nav class="navigation">
+        <div class="logo">
+          <a class="logo-img"><img src="#" alt="логотип сайта города Седона " /></a>
+        </div>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Главная</a>
@@ -60,18 +61,30 @@
       </ol>
       <!--Хлебные крошки конец-->  
 
-      <form action="#" method=""get>
+      <form action="#" method="get">
         <p>Инфраструктура:</p>
-        <p><input type="checkbox" name="infrastructure" value="Бассейн" checked>Бассейн</p>
-        <p><input type="checkbox" name="infrastructure" value="Парковка" checked>Парковка</p>
-        <p><input type="checkbox" name="infrastructure" value="Wi-Fi">Wi-Fi</p>
+
+        <label for="swimming-pool">Бассейн</label>
+        <input id="swimming-pool" type="checkbox" name="infrastructure" value="Бассейн" checked>
+
+        <label for="parking">Парковка</label>
+        <input id="parking" type="checkbox" name="infrastructure" value="Парковка" checked>
+
+        <label for="Wi-Fi">Wi-Fi</label>
+        <input id="Wi-Fi" type="checkbox" name="infrastructure" value="Wi-Fi">
      </form>
     
       <form action="#" method="get"> 
         <p>Тип жилья</p>
-        <p><input name="housing" type="radio" value="Гостиница" checked>Гостиницан</p>
-        <p><input name="housing" type="radio" value="Мотель">Мотель</p>
-        <p><input name="housing" type="radio" value="Апартаменты">Апартаменты</p>
+
+        <label for="Hotel">Гостиницан</label>
+        <input id="Hotel" name="housing" type="radio" value="Гостиница" checked>
+        
+        <label for="motel">Мотель</label>
+        <input id="motel" name="housing" type="radio" value="Мотель">
+       
+        <label for="Apartments">Апартаменты</label>
+        <input id="Apartments" name="housing" type="radio" value="Апартаменты">
       </form> 
 
       <!--Блок с ценной начало-->
@@ -79,17 +92,17 @@
           <span>Стоимость,</span>
           <span>₽:</span>
       </section>
-      <div>
-        <button class="submit">Применить</button>
-        <button class="submit">Сбросить</button>
-      </div>
+      
+      <form>
+        <button type="submit">Применить</button>
+        <button type="reset">Сбросить</button>
+      </form>
       <!--Блок с ценной конец-->
-
       
       <!--Гостиницы начало-->
-        <h3 class="visually-hidden">
+        <h2 class="visually-hidden">
           Каталог гостиниц
-        </h3>
+        </h2>
 
         <section class="hotel-catalog">
           <span>Найдено гостиниц:</span>
@@ -111,68 +124,67 @@
           <!--Корточка 1-->
           <div class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" scr="#" alt="Фото гостиницы Amara Resort & Spa">
+              <img class="product-card-image" src="#" alt="Фото гостиницы Amara Resort & Spa">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
             <b class="product-card-price"></b>
-            <span>Гостиница</span>
-            <sapan>От 4000 р</sapan>
-            <button type="submit">Подробнее</button>
-            <button type="submit">В избранное</button>
-            <span>Рейтинг</span>
-            <span>8,5</span>
+            <p>Гостиница</p>
+            <button type="button">Подробнее</button>
+            <button type="button">В избранное</button>
+            <p>Рейтинг</p>
+            <p>8,5</p>
           </div>
 
           <!--Корточка 2-->
           <div class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" scr="#" alt="Фото гостиницы Villas at Poco Diablo">
+              <img class="product-card-image" src="#" alt="Фото гостиницы Villas at Poco Diablo">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
             <b class="product-card-price"></b>
-            <span>Гостиница</span>
-            <sapan>От 5000 р</sapan>
-            <button type="submit">Подробнее</button>
-            <button type="submit">В избранное</button>
-            <span>Рейтинг</span>
-            <span>9,2</span>
+            <p>Гостиница</p>
+            <p>От 5000 р</p>
+            <button type="button">Подробнее</button>
+            <button type="button">В избранное</button>
+            <p>Рейтинг</p>
+            <p>9,2</p>
           </div>
 
        <!--Корточка 3-->
        <div class="product-card">
         <a class="product-card-link" href="#">
-          <img class="product-card-image" scr="#" alt="Фото гостиницы Desert Quail Inn">
+          <img class="product-card-image" src="#" alt="Фото гостиницы Desert Quail Inn">
           <h3 class="product-card-title">Desert Quail Inn</h3>
         </a>
         <b class="product-card-price"></b>
-        <span>Гостиница</span>
-        <sapan>От 2500 р</sapan>
-        <button type="submit">Подробнее</button>
-        <button type="submit">В избранное</button>
-        <span>Рейтинг</span>
-        <span>6,9</span>
+        <p>Гостиница</p>
+        <p>От 2500 р</p>
+        <button type="button">Подробнее</button>
+        <button type="button">В избранное</button>
+        <p>Рейтинг</p>
+        <p>6,9</p>
       </div>
 
        <!--Корточка 4-->
        <div class="product-card">
         <a class="product-card-link" href="#">
-          <img class="product-card-image" scr="#" alt="Фото гостиницы GreenTree Inn">
+          <img class="product-card-image" src="#" alt="Фото гостиницы GreenTree Inn">
           <h3 class="product-card-title">GreenTree Inn</h3>
         </a>
         <b class="product-card-price"></b>
-        <span>Гостиница</span>
-        <sapan>От 1500 р</sapan>
-        <button type="submit">Подробнее</button>
-        <button type="submit">В избранное</button>
-        <span>Рейтинг</span>
-        <span>5,0</span>
+        <p>Гостиница</p>
+        <p>От 1500 р</p>
+        <button type="button">Подробнее</button>
+        <button type="button">В избранное</button>
+        <p>Рейтинг</p>
+        <p>5,0</p>
       </div>
         </section>
       <!--Гостиницы конец-->
 
       <!--Пагенация начало-->
         <section class="pagination-list">
-          <h3 class="pagination-list visually-hidden">Пагинация</h3>
+          <h2 class="pagination-list visually-hidden">Пагинация</h2>
           <ul class="pagination">
             
             <li class="pagination-item pagination-current">
@@ -212,12 +224,14 @@
      <section class="contacts">
         <div class="social">
           <ul class="social-list">
-            <li class=""social-list-item><a href="#" class="visually-hidden">Вконтакте</a></li>
-            <li class=""social-list-item><a href="#" class="visually-hidden">Телеграмм</a></li>
-            <li class=""social-list-item><a href="#" class="visually-hidden">YouTube</a></li>
+            <li class="social-list-item"><a href="#" class="visually-hidden">Вконтакте</a></li>
+            <li class="social-list-item"><a href="#" class="visually-hidden">Телеграмм</a></li>
+            <li class="social-list-item"><a href="#" class="visually-hidden">YouTube</a></li>
           </ul>
           <button type="tel" value="+78128121212">+7 (812) 812-12-12</button>
-          <div class="logo-academy"><a href="#"><img scr="" alt="логотип html academy"></a></div>
+        </div>
+        <div class="logo-academy">
+          <a href="#"><img src="#" alt="логотип html academy"></a>
         </div>
      </section> 
     </footer>
