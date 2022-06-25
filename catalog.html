@@ -14,7 +14,7 @@
     <header class="page-header">
       <nav class="navigation">
         <div class="logo">
-          <a class="logo-img"><img src="#" alt="логотип сайта города Седона " /></a>
+          <a class="logo-img"><img src="/files/logo.svg" alt="логотипg сайта города Седона " /></a>
         </div>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -61,41 +61,47 @@
       </ol>
       <!--Хлебные крошки конец-->  
 
-      <form action="#" method="get">
+
+
+      <form action="https://echo.htmlacademy.ru/" method="get">
         <p>Инфраструктура:</p>
 
-        <label for="swimming-pool">Бассейн</label>
-        <input id="swimming-pool" type="checkbox" name="infrastructure" value="Бассейн" checked>
+        <div>
+          <label for="swimming-pool">Бассейн</label>
+          <input id="swimming-pool" type="checkbox" name="infrastructure" value="Бассейн" checked>
 
-        <label for="parking">Парковка</label>
-        <input id="parking" type="checkbox" name="infrastructure" value="Парковка" checked>
+          <label for="parking">Парковка</label>
+          <input id="parking" type="checkbox" name="infrastructure" value="Парковка" checked>
 
-        <label for="Wi-Fi">Wi-Fi</label>
-        <input id="Wi-Fi" type="checkbox" name="infrastructure" value="Wi-Fi">
-     </form>
+          <label for="Wi-Fi">Wi-Fi</label>
+          <input id="Wi-Fi" type="checkbox" name="infrastructure" value="Wi-Fi">
+        </div>
     
-      <form action="#" method="get"> 
-        <p>Тип жилья</p>
+        <div>
+          <p>Тип жилья</p>
 
-        <label for="Hotel">Гостиницан</label>
-        <input id="Hotel" name="housing" type="radio" value="Гостиница" checked>
+          <label for="Hotel">Гостиницан</label>
+          <input id="Hotel" name="housing" type="radio" value="Гостиница" checked>
+          
+          <label for="motel">Мотель</label>
+          <input id="motel" name="housing" type="radio" value="Мотель">
         
-        <label for="motel">Мотель</label>
-        <input id="motel" name="housing" type="radio" value="Мотель">
-       
-        <label for="Apartments">Апартаменты</label>
-        <input id="Apartments" name="housing" type="radio" value="Апартаменты">
-      </form> 
+          <label for="Apartments">Апартаменты</label>
+          <input id="Apartments" name="housing" type="radio" value="Апартаменты">
+        </div> 
 
-      <!--Блок с ценной начало-->
-      <section class="price">
-          <span>Стоимость,</span>
-          <span>₽:</span>
-      </section>
-      
-      <form>
-        <button type="submit">Применить</button>
-        <button type="reset">Сбросить</button>
+        <!--Блок с ценной начало-->
+         <div>
+          <section class="price">
+            <span>Стоимость,</span>
+            <span>₽:</span>
+          </section>
+        </div>
+
+        <div>
+          <button type="submit">Применить</button>
+          <button type="reset">Сбросить</button>
+        </div>
       </form>
       <!--Блок с ценной конец-->
       
@@ -167,19 +173,19 @@
 
        <!--Корточка 4-->
        <div class="product-card">
-        <a class="product-card-link" href="#">
-          <img class="product-card-image" src="#" alt="Фото гостиницы GreenTree Inn">
-          <h3 class="product-card-title">GreenTree Inn</h3>
-        </a>
-        <b class="product-card-price"></b>
-        <p>Гостиница</p>
-        <p>От 1500 р</p>
-        <button type="button">Подробнее</button>
-        <button type="button">В избранное</button>
-        <p>Рейтинг</p>
-        <p>5,0</p>
-      </div>
-        </section>
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="#" alt="Фото гостиницы GreenTree Inn">
+            <h3 class="product-card-title">GreenTree Inn</h3>
+          </a>
+          <b class="product-card-price"></b>
+          <p>Гостиница</p>
+          <p>От 1500 р</p>
+          <button type="button">Подробнее</button>
+          <button type="button">В избранное</button>
+          <p>Рейтинг</p>
+          <p>5,0</p>
+        </div>
+      </section>
       <!--Гостиницы конец-->
 
       <!--Пагенация начало-->

@@ -1,3 +1,15 @@
 .bread_crumbs li:after{
     content:'>';
 }
+.hero{
+    background-image: url(../images/index-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer{
+    background-image: url(../images/mountains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
