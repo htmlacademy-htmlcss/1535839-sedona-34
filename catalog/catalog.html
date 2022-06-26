@@ -5,16 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
-
   <body>
-
-    
+ 
     <header class="page-header">
       <nav class="navigation">
         <div class="logo">
-          <a class="logo-img"><img src="/files/logo.svg" alt="логотипg сайта города Седона " /></a>
+          <a class="logo-img"><img src="images/icon catalog/logo.svg" alt="логотипg сайта города Седона" width="139" height="70"/></a>
         </div>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -29,10 +27,10 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+            <a class="navigation-link" href="#"><img src="images/icon catalog/search.svg" width="18" height="18" alt="search"></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Лайк</span></a>
+            <a class="navigation-link" href="#"><img src="images/icon catalog/favorite.svg" width="18" height="18" alt="favorite"></a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#"><span class="visually-hidden">Хочу сюда</span></a>
@@ -42,74 +40,73 @@
     </header>
     
   <main class="hotels">
-      <div>
-        <h1 class="main-title">Гостиницы Седоны</h1>
-      </div>
-      
-      <!--Хлебные крошки начало-->
-      <ol class="bread_crumbs">
-        <li>
-          <a href="images/bread.svg">
-            <span></span>
-          </a>
-        </li>
-        <li>
-          <a>
-            <span>Гостиницы</span>
-          </a>
-        </li>
-      </ol>
-      <!--Хлебные крошки конец-->  
-
-
-
-      <form action="https://echo.htmlacademy.ru/" method="get">
-        <p>Инфраструктура:</p>
-
+    <div class="hero">
         <div>
-          <label for="swimming-pool">Бассейн</label>
-          <input id="swimming-pool" type="checkbox" name="infrastructure" value="Бассейн" checked>
-
-          <label for="parking">Парковка</label>
-          <input id="parking" type="checkbox" name="infrastructure" value="Парковка" checked>
-
-          <label for="Wi-Fi">Wi-Fi</label>
-          <input id="Wi-Fi" type="checkbox" name="infrastructure" value="Wi-Fi">
+          <h1 class="main-title">Гостиницы Седоны</h1>
         </div>
-    
-        <div>
-          <p>Тип жилья</p>
-
-          <label for="Hotel">Гостиницан</label>
-          <input id="Hotel" name="housing" type="radio" value="Гостиница" checked>
-          
-          <label for="motel">Мотель</label>
-          <input id="motel" name="housing" type="radio" value="Мотель">
         
-          <label for="Apartments">Апартаменты</label>
-          <input id="Apartments" name="housing" type="radio" value="Апартаменты">
-        </div> 
+        <!--Хлебные крошки начало-->
+        <ol class="bread_crumbs">
+          <li>
+            <a href="#">
+              <img src="images/icon catalog/Union.svg" width="12" height="12" alt="bread crumbs"></img>
+              <img src="images/icon catalog/Vector.svg" alt="bread crumbs">
+            </a>
+          </li>
+          <li>
+            <a>
+              <span>Гостиницы</span>
+            </a>
+          </li>
+        </ol>
+        <!--Хлебные крошки конец-->  
 
-        <!--Блок с ценной начало-->
-         <div>
-          <section class="price">
-            <span>Стоимость,</span>
-            <span>₽:</span>
-          </section>
-        </div>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <p>Инфраструктура:</p>
+          <div>
+            <label for="swimming-pool">Бассейн</label>
+            <input id="swimming-pool" type="checkbox" name="infrastructure" value="Бассейн" checked>
 
-        <div>
-          <button type="submit">Применить</button>
-          <button type="reset">Сбросить</button>
-        </div>
-      </form>
-      <!--Блок с ценной конец-->
+            <label for="parking">Парковка</label>
+            <input id="parking" type="checkbox" name="infrastructure" value="Парковка" checked>
+
+            <label for="Wi-Fi">Wi-Fi</label>
+            <input id="Wi-Fi" type="checkbox" name="infrastructure" value="Wi-Fi">
+          </div>
       
+          <div>
+            <p>Тип жилья</p>
+
+            <label for="Hotel">Гостиницан</label>
+            <input id="Hotel" name="housing" type="radio" value="Гостиница" checked>
+            
+            <label for="motel">Мотель</label>
+            <input id="motel" name="housing" type="radio" value="Мотель">
+          
+            <label for="Apartments">Апартаменты</label>
+            <input id="Apartments" name="housing" type="radio" value="Апартаменты">
+          </div> 
+
+          <!--Блок с ценной начало-->
+          <div>
+            <section class="price">
+              <span>Стоимость,</span>
+              <span>₽:</span>
+            </section>
+          </div>
+
+          <div>
+            <button type="submit">Применить</button>
+            <button type="reset">Сбросить</button>
+          </div>
+        </form>
+        <!--Блок с ценной конец-->
+      </div>
+
       <!--Гостиницы начало-->
         <h2 class="visually-hidden">
           Каталог гостиниц
         </h2>
-
         <section class="hotel-catalog">
           <span>Найдено гостиниц:</span>
           <span>38</span>
@@ -120,17 +117,22 @@
             <option value="expensive">Сначала дорогое</option>
           </select>
 
-          <a href="#" class="button button-light">
-            <span class="visually-hidden">Показать список</span>
-          </a>
-          <a class="button" href="#" >
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
+          <div>
+              <a class="icon-view">
+                <img src="images/icon catalog/icon-table.svg" width="16" height="14" alt="Показать в виде таблицы" title="Показать в виде таблицы">
+              </a>
+              <a class="icon-view">
+                <img src="images/icon catalog/icon-slideshow.svg" width="16" height="14" alt="Показать в виде слайд шоу" title="Показать в виде слайд шоу">
+              </a>
+              <a class="icon-view">
+                <img src="images/icon catalog/icon-list.svg" width="16" height="14" alt="Показать в виде сипска" title="Показать в виде сипска">
+              </a>
+          </div>
 
           <!--Корточка 1-->
           <div class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="#" alt="Фото гостиницы Amara Resort & Spa">
+              <img class="product-card-image" src="images/hotel-1-Amara Resort & Spa.jpg" width="300" height="211" alt="Фото гостиницы Amara Resort & Spa">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
             <b class="product-card-price"></b>
@@ -144,7 +146,7 @@
           <!--Корточка 2-->
           <div class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="#" alt="Фото гостиницы Villas at Poco Diablo">
+              <img class="product-card-image" src="images/hotel-2-Villas at Poco Diablo.jpg" width="300" height="211" alt="Фото гостиницы Villas at Poco Diablo">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
             <b class="product-card-price"></b>
@@ -159,7 +161,7 @@
        <!--Корточка 3-->
        <div class="product-card">
         <a class="product-card-link" href="#">
-          <img class="product-card-image" src="#" alt="Фото гостиницы Desert Quail Inn">
+          <img class="product-card-image" src="images/hotel-3-Desert Quail Inn.jpg" width="300" height="211" alt="Фото гостиницы Desert Quail Inn">
           <h3 class="product-card-title">Desert Quail Inn</h3>
         </a>
         <b class="product-card-price"></b>
@@ -174,7 +176,7 @@
        <!--Корточка 4-->
        <div class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Фото гостиницы GreenTree Inn">
+            <img class="product-card-image" src="images/hotel-4-GreenTree Inn.jpg" width="300" height="211" alt="Фото гостиницы GreenTree Inn">
             <h3 class="product-card-title">GreenTree Inn</h3>
           </a>
           <b class="product-card-price"></b>
@@ -237,7 +239,7 @@
           <button type="tel" value="+78128121212">+7 (812) 812-12-12</button>
         </div>
         <div class="logo-academy">
-          <a href="#"><img src="#" alt="логотип html academy"></a>
+          <a href="#"><img src="images/icon catalog/HTML Academy.svg" alt="логотип html academy"></a>
         </div>
      </section> 
     </footer>
