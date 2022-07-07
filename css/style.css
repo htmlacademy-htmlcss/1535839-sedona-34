@@ -1,15 +1,189 @@
-.bread_crumbs li:after{
-    content:'>';
+@font-face{
+    font-family:"PT Sans";
+    font-style:normal;
+    font-weight:400;
+    src:url("../fonts/ptsans-400.woff2");
+    font-display:swap;
 }
+@font-face{
+    font-family:"PT Sans";
+    font-style:normal;
+    font-weight:700;
+    src:url("../fonts/ptsans-700.woff2");
+    font-display:swap;
+}
+/* Блок с навигацией начало */
+.navigation-link{
+    font-family: "PT Sans";
+    font-style:normal;
+    font-weight:700;
+    font-size:20px;
+    line-height:26px;
+}
+.navigation-link>span{
+    font-family:"PT Sans";
+    font-style:normal;
+    font-weight:700;
+    font-size:16px;
+    line-height:20px;
+}
+/* Блок с навигацией конец */
+
+/* Блок с hero начало*/
 .hero{
     background-image: url(../images/index-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+.Sedona-small-town{
+    font-family:"PT Sans";
+    font-style:normal;
+    font-weight:700;
+    font-size:30px;
+    line-height:36px;
+}
+.Sedona-is-cooler{
+    font-family:"PT Sans";
+    font-style:normal;
+    font-weight:400;
+    font-size:22px;
+    line-height:26px;
+}
+/* Блок с hero конец*/
+
+/* причины ехать в Седону начло */
+.title-advantages{
+    font-family:"PT Sans";
+    font-style:normal;
+    font-weight:700;
+    font-size:24px;
+    line-height:28px;
+    color: #FFFFFF;
+}
+.numbering{
+    font-family:"PT Sans";
+    font-style:normal;
+    font-weight:400;
+    font-size:18px;
+    line-height:21px;
+}
+.more-reasons{
+    font-family:"PT Sans";
+    font-style:normal;
+    font-weight:700;
+    font-size:24px;
+    line-height:28px;
+    color:#000000;
+}
+.first-second-reason{
+    font-family:"PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color:#FFFFFF;
+    background-color:#82B3D3;
+}
+.third-fourth-fifth-reasons{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.housing-food-souvenirs{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.paragraph{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+.hotel-search{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #756157;
+}
+li{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color:#333333;
+    list-style-type:none;
+}
+
+/* причины ехать в Седону начло */
+
+/* Подвал начало */
+.mailing-list{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.useful-information{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.subscribe{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color:#FFFFFF;
+}
+.phone{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/* Подвал конец */
+.bread_crumbs li:after{
+    content:'>';
+}
+
 .footer{
     background-image: url(../images/mountains.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.page-header{
+    display:flex;
+    justify-content: space-between;
+}
+.navigation{
+    display:flex;
+    justify-content: space-between;
 }
